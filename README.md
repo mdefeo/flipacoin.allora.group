@@ -6,7 +6,7 @@ This is a demo of a coin-flipper made with vanilla JavaScript and CSS3.
 *The images of the coin were taken from a Google search*
 
 ## Demo
-View the demo at [http://flipacoin.allora.group/](http://flipacoin.allora.group/)
+View the demo at [https://flipacoin.allora.group/](https://flipacoin.allora.group/)
 
 ## Notes
 To test this functionality on hover just to see it flip the coin from front to back, uncomment out these lines in the style.css file:
