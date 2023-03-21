@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flip a coin</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head> 
+<body>
+    <header>
+        <h1>Clik the button to flip the coin</p>
+        <button type="button" id="flipCTA">Flip the Coin!</button>
+    </header>
+    <div class="coin-flip">
+        <div id="coin-flipper" class="coin-flip-inner">
+          <div id="coin-heads" class="coin-flip-heads" data-side="heads">
+          </div>
+          <div id="coin-tails" class="coin-flip-tails" data-side="tails">
+          </div>
+        </div>
+      </div>
+
+    <script>
+        /* Get the button by ID */ 
+        var flipClick = document.getElementById('flipCTA');
+
+        /* Locate the container that will trigger the flip on click */
+        var coinFlipper = document.getElementById('coin-flipper');
+
+        /* Add the CTA to the button to trigger the flipping functionality */
+    	flipClick.addEventListener('click',flipACoin);
+
+        function flipACoin(){
+            /* Select a random multiplyer of 180 degrees to determine how many times the coin should be flipped */
+            var flipDegrees  = Math.floor(Math.random() * 10) * 180;
+            /* Flip the coiny by rotating the Y axis */
+            coinFlipper.style.transform='rotateY(-'+flipDegrees+'deg)';
+	    }  
+        /* Kick it off with a random flip on load */
+        flipACoin();
+    </script>
+
+    
+</body>
+</html>
+
+
