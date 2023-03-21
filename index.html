@@ -31,7 +31,7 @@
 
         function flipACoin(){
             /* Select a random multiplyer of 180 degrees to determine how many times the coin should be flipped */
-            var flipDegrees  = Math.floor(Math.random() * 10) * 180;
+            var flipDegrees  = Math.floor((Math.random() * 20) + 1) * 180;
             /* Flip the coiny by rotating the Y axis */
             coinFlipper.style.transform='rotateY(-'+flipDegrees+'deg)';
 	    }  
